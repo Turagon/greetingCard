@@ -110,7 +110,7 @@ main {
 }
 
 .middle-img2 {
-  background-image: url("../img/福字.png");
+  background-image: url("https://turagon.github.io/greetingCard/福字.png");
   transform: rotateY(90deg) translateZ(125px)
 }
 
@@ -120,7 +120,7 @@ main {
 }
 
 .middle-img4 {
-  background-image: url("../img/牛剪紙.png");
+  background-image: url("https://turagon.github.io/greetingCard/牛剪紙.png");
   transform: rotateY(-90deg) translateZ(125px)
 }
 
@@ -137,7 +137,7 @@ main {
   width: 80%;
   height: 200px;
   margin: 20px auto 0;
-  background-image:url('../img/金牛年大吉.png');
+  background-image:url('https://turagon.github.io/greetingCard/金牛年大吉.png');
   background-size: cover;
   background-position: center;
 }
