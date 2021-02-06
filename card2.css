@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* perspective: 200px; */
+}
+
+main {
+  width: 50%;
+  height: 700px;
+  border: gold 5px solid;
+  margin: 10px auto;
+}
+
+.outter {
+  width: 100%;
+  height: 100%;
+  border: #AB0501 5px solid;
+  background-color: rgba(180,73,134,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-slogan{
+  width: 80%;
+  height: 70px;
+  margin: 15px auto;
+}
+
+.top-slogan-relative {
+  width: 100%;
+  position: relative;
+  animation: slogan-rotate 10s infinite;
+  transform-style: preserve-3d;
+  transform-origin: 50% center;
+}
+
+.top-slogan1, .top-slogan2 {
+  width: 100%;
+  color: #AB0501;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  letter-spacing: 8px;
+  text-align: center;
+  position: absolute;
+  backface-visibility: hidden;
+  background-color: rgba(171,5,1,0.01);
+}
+
+.top-slogan1 {
+  transform: rotateY(180deg);
+}
+
+.top-slogan2 {
+  transform: rotateY(0deg);
+}
+
+@keyframes slogan-rotate{
+  from {
+    transform: rotateY(360deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+.middle {
+  width: 100%;
+  height: 500px;
+}
+
+.middle-inner {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.middle-img-relative {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  top: 5%;
+  transform-style: preserve-3d;
+  animation: cubic-rotate infinite 20s;
+}
+
+.middle-img-relative > div {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  border-radius: 50%;
+  background-size: contain;
+}
+.middle-img1 {
+  background-image: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/15129/greeting_card_element-11.png");
+  transform: rotateY(0deg) translateZ(125px)
+}
+
+.middle-img2 {
+  background-image: url("../img/福字.png");
+  transform: rotateY(90deg) translateZ(125px)
+}
+
+.middle-img3 {
+  background-image: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/15129/greeting_card_element-11.png");
+  transform: rotateY(180deg) translateZ(125px)
+}
+
+.middle-img4 {
+  background-image: url("../img/牛剪紙.png");
+  transform: rotateY(-90deg) translateZ(125px)
+}
+
+@keyframes cubic-rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.logo {
+  width: 80%;
+  height: 200px;
+  margin: 20px auto 0;
+  background-image:url('../img/金牛年大吉.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.lower {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.words {
+  font-family: 'Liu Jian Mao Cao', cursive;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+
+
+
+
