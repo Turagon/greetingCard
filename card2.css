@@ -53,6 +53,7 @@ main {
   text-align: center;
   position: absolute;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   background-color: rgba(171,5,1,0.01);
 }
 
